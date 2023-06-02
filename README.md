@@ -1,6 +1,6 @@
  I haven't got time to clean up everything.
  
-In my opinion, inversion for synthetic layered anisotropic medium is still hard because of local minimum and shear waves dealing.
+In my personal opinion, simultaneous inversion for layered anisotropic medium parameters and microseismic location for monitoring is still hard because of local minimum and shear waves dealing.
 
 I hope these code can work as a basis for forward modeling for microseismic monitoring and comparing for different inversion methods.
 
