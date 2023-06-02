@@ -11,7 +11,7 @@ for i=1:Cnl_all
 end
 
 % for i=1:nl_all
-%     lb((i-1)*5+2)=-Inf;
+%     lb((i-1)*5+2)=-Inf;  %need to distinguish between bounds for generating initial model parameters and bounds for constrained optimization
 %     ub((i-1)*5+2)=Inf;
 % end
 
