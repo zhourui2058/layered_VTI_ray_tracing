@@ -57,17 +57,17 @@ for i=1:n_ms
            ub(Cnl_all+nl_all-1+i*3-1)=ms(i,2)+20/L;       %z
            ub(Cnl_all+nl_all-1+i*3)=10000;                %t
         else %3D
-           lb(Cnl_all+nl_all-1+i*3-2)=ms(i,1)-20/L;       %x
-           lb(Cnl_all+nl_all-1+i*3-2)=ms(i,2)-20/L;       %y
-           lb(Cnl_all+nl_all-1+i*3-1)=ms(i,3)-20/L;       %z
-           if lb(Cnl_all+nl_all-1+i*3-1)<0                %below earth surface
-               lb(Cnl_all+nl_all-1+i*3-1)=eps;              
+           lb(Cnl_all+nl_all-1+i*4-3)=ms(i,1)-20/L;       %x
+           lb(Cnl_all+nl_all-1+i*4-2)=ms(i,2)-20/L;       %y
+           lb(Cnl_all+nl_all-1+i*4-1)=ms(i,3)-20/L;       %z
+           if lb(Cnl_all+nl_all-1+i*4-1)<0                %below earth surface
+               lb(Cnl_all+nl_all-1+i*4-1)=eps;              
            end
-           lb(Cnl_all+nl_all-1+i*3)=-10000;               %t
-           ub(Cnl_all+nl_all-1+i*3-2)=ms(i,1)+20/L;       %x
-           ub(Cnl_all+nl_all-1+i*3-2)=ms(i,2)+20/L;       %y
-           ub(Cnl_all+nl_all-1+i*3-1)=ms(i,3)+20/L;       %z
-           ub(Cnl_all+nl_all-1+i*3)=10000;                %t
+           lb(Cnl_all+nl_all-1+i*4)=-10000;               %t
+           ub(Cnl_all+nl_all-1+i*4-3)=ms(i,1)+20/L;       %x
+           ub(Cnl_all+nl_all-1+i*4-2)=ms(i,2)+20/L;       %y
+           ub(Cnl_all+nl_all-1+i*4-1)=ms(i,3)+20/L;       %z
+           ub(Cnl_all+nl_all-1+i*4)=10000;                %t
        end
 end
 lb=lb';ub=ub';
