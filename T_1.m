@@ -1,7 +1,7 @@
 %Matlab two-point ray tracing forward modeling for horizontlly layered VTI media. The code is good for forward modeling with realistic earth material.
 %It is not optimal for inversion as special treatments need to be applied for inversion.
 %The code is a modification of the ray tracing code direct1.f from the double-difference location method at http://www.ldeo.columbia.edu/~felixw/HYPODD/HYPODD_1.3.tar.gz
-%Interface processing is rigorously taken care of compare to the horizontal slowness shooting ray tracing method (https://library.seg.org/doi/abs/10.1190/geo2019-0325.1) 
+%Interface processing is rigorously taken care of. Different from the horizontal slowness shooting ray tracing method (https://library.seg.org/doi/abs/10.1190/geo2019-0325.1) 
 %Please report any bugs and improvements to: Rui Zhou, zhourui2058@gmail.com, zhourui2058@126.com, https://www.linkedin.com/in/zhourui2058/,
 
 function [tdir,trip]=T_1(C_all_L,top_all,rec,ms,ir,im)
