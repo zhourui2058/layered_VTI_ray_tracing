@@ -5,7 +5,7 @@ if(u==0)          %vertical incidence, in case invhs is infinity
 else
     hs=u/V;       %horizontal slowness
     invhs=2/hs^2;
-    a=(invhs)^2-2*C(1,1)*invhs+2*C(3,3)*invhs+4*C(1,3)^2-4*C(1,1)*C(3,3)+4*C(1,1)*C(5,5)+8*C(1,3)*C(5,5)+4*C(3,3)*C(5,5);  %verified, see "formula derivation.docx (also checked many times)"   
+    a=(invhs)^2-2*C(1,1)*invhs+2*C(3,3)*invhs+4*C(1,3)^2-4*C(1,1)*C(3,3)+4*C(1,1)*C(5,5)+8*C(1,3)*C(5,5)+4*C(3,3)*C(5,5);  %checked many times   
     b=-4*C(1,3)^2+4*C(1,1)*C(3,3)-8*C(1,3)*C(5,5)-8*C(3,3)*C(5,5)-2*C(3,3)*invhs-2*C(5,5)*invhs;
     c=4*C(3,3)*C(5,5);
     quard1=sqrt((-b+sqrt(b^2-4*a*c))/(2*a));    
