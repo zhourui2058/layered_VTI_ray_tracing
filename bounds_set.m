@@ -49,7 +49,7 @@ for i=1:n_ms
        if strcmp(loc_2d3d,'2D')==1
            lb(Cnl_all+nl_all-1+i*3-2)=ms(i,1)-50/L;       %r 
            lb(Cnl_all+nl_all-1+i*3-1)=ms(i,2)-50/L;       %z
-           if lb(Cnl_all+nl_all-1+i*3-1)<0                %below earth surface
+           if lb(Cnl_all+nl_all-1+i*3-1)<0                %below given geological formation
                lb(Cnl_all+nl_all-1+i*3-1)=eps;
            end   
            lb(Cnl_all+nl_all-1+i*3)=-10000;               %t
@@ -60,7 +60,7 @@ for i=1:n_ms
            lb(Cnl_all+nl_all-1+i*4-3)=ms(i,1)-50/L;       %x
            lb(Cnl_all+nl_all-1+i*4-2)=ms(i,2)-50/L;       %y
            lb(Cnl_all+nl_all-1+i*4-1)=ms(i,3)-50/L;       %z
-           if lb(Cnl_all+nl_all-1+i*4-1)<0                %below earth surface
+           if lb(Cnl_all+nl_all-1+i*4-1)<0                %below given geological formation
                lb(Cnl_all+nl_all-1+i*4-1)=eps;              
            end
            lb(Cnl_all+nl_all-1+i*4)=-10000;               %t
