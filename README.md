@@ -4,6 +4,6 @@ These codes can work as a basis for forward modeling for microseismic monitoring
 
 By the way, I have developed a radically new algorithm for anisotropic microseismic inversion, my synthetic tests show a significant improvement of state of the art. Implementions include new nonlinear constraints. Please contact me if you want to know more. 
 
-My contact info: zhourui2058@gmail.com, zhourui2058@126.com, https://www.linkedin.com/in/zhourui2058/
+My contact info: zhourui2058@gmail.com, zhourui2058@126.com, https://www.linkedin.com/in/zhourui2058/, Phone number: 86-13665556361 (Same as WeChat account).
 
 Thank you very much!
